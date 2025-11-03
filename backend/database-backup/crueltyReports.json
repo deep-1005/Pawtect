@@ -1,0 +1,212 @@
+[
+  {
+    "reportedBy": {
+      "userId": null,
+      "name": "Anonymous",
+      "email": null,
+      "phone": null,
+      "isAnonymous": true
+    },
+    "incident": {
+      "type": "Illegal Trade",
+      "description": "saw an illegal trade of dog",
+      "severity": "High",
+      "dateTime": "2025-11-01T17:59:00.000Z",
+      "isOngoing": true
+    },
+    "location": {
+      "coordinates": {
+        "lat": 12.934777,
+        "lng": 77.534721
+      },
+      "address": "hello1@gmail.com",
+      "city": "banglore",
+      "state": "Karnataka",
+      "pincode": "761011",
+      "landmark": ""
+    },
+    "evidence": {
+      "photos": [],
+      "videos": []
+    },
+    "resolution": {
+      "resolvedBy": null
+    },
+    "_id": "6906980e0761987f207b47ad",
+    "reportId": "CR-MHGX0KR5-51ME",
+    "status": "Under Investigation",
+    "priority": "High",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "action": "Report Submitted",
+        "description": "Cruelty report submitted by anonymous user",
+        "timestamp": "2025-11-01T23:30:22.865Z",
+        "_id": "6906980e0761987f207b47ae"
+      },
+      {
+        "action": "Status Changed to Under Investigation",
+        "description": "Status changed to Under Investigation",
+        "performedBy": null,
+        "timestamp": "2025-11-01T23:31:11.690Z",
+        "_id": "6906983f0761987f207b47db"
+      }
+    ],
+    "isActive": true,
+    "isPublic": false,
+    "adminNotes": [],
+    "createdAt": "2025-11-01T23:30:22.888Z",
+    "updatedAt": "2025-11-01T23:31:11.696Z",
+    "__v": 1
+  },
+  {
+    "reportedBy": {
+      "userId": null,
+      "name": "Anonymous",
+      "email": null,
+      "phone": null,
+      "isAnonymous": true
+    },
+    "incident": {
+      "type": "Fighting",
+      "description": "saw a dog being hit by security gaurds",
+      "severity": "Medium",
+      "dateTime": "2025-11-01T20:00:00.000Z",
+      "isOngoing": true
+    },
+    "location": {
+      "coordinates": {
+        "lat": 12.934775999999998,
+        "lng": 77.534718
+      },
+      "address": "kjdfh",
+      "city": "banh",
+      "state": "Karnataka",
+      "pincode": "560068",
+      "landmark": "Pes University"
+    },
+    "evidence": {
+      "photos": [
+        {
+          "path": "/uploads/cruelty-1762047103388-203662002.jpeg",
+          "uploadedAt": "2025-11-02T01:31:43.404Z",
+          "_id": "6906b47f22c9534cd1d9d36b"
+        }
+      ],
+      "videos": []
+    },
+    "resolution": {
+      "resolvedBy": null
+    },
+    "_id": "6906b47f22c9534cd1d9d36a",
+    "reportId": "CR-MHH1CMGC-ZWE2",
+    "status": "Under Investigation",
+    "priority": "Medium",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "action": "Report Submitted",
+        "description": "Cruelty report submitted by anonymous user",
+        "timestamp": "2025-11-02T01:31:43.404Z",
+        "_id": "6906b47f22c9534cd1d9d36c"
+      },
+      {
+        "action": "Status Changed to Under Investigation",
+        "description": "Status changed to Under Investigation",
+        "performedBy": null,
+        "timestamp": "2025-11-02T01:32:44.297Z",
+        "_id": "6906b4bc22c9534cd1d9d3a0"
+      }
+    ],
+    "isActive": true,
+    "isPublic": false,
+    "adminNotes": [],
+    "createdAt": "2025-11-02T01:31:43.434Z",
+    "updatedAt": "2025-11-02T01:32:44.303Z",
+    "__v": 1
+  },
+  {
+    "reportedBy": {
+      "userId": null,
+      "name": "Anonymous",
+      "email": null,
+      "phone": null,
+      "isAnonymous": true
+    },
+    "incident": {
+      "type": "Physical Abuse",
+      "description": "i saw this happening",
+      "severity": "Medium",
+      "dateTime": "2025-11-03T09:51:00.000Z",
+      "isOngoing": false
+    },
+    "location": {
+      "coordinates": {
+        "lat": 13.026714972652064,
+        "lng": 77.57805331312508
+      },
+      "address": "Flat No b4,kalasam oyster apartment, above eat out zone, 6th cross, msr hospital road, ashwath nagar, bengaluru,560094",
+      "city": "banglore",
+      "state": "Karnataka",
+      "pincode": "",
+      "landmark": ""
+    },
+    "evidence": {
+      "photos": [
+        {
+          "path": "/uploads/cruelty-1762183363009-922670008.png",
+          "uploadedAt": "2025-11-03T15:22:43.064Z",
+          "_id": "6908c8c393289c0760ba5500"
+        }
+      ],
+      "videos": [
+        {
+          "path": "/uploads/video-1762183363026-751503657.mp4",
+          "uploadedAt": "2025-11-03T15:22:43.064Z",
+          "_id": "6908c8c393289c0760ba5501"
+        }
+      ]
+    },
+    "resolution": {
+      "resolvedBy": null,
+      "resolvedAt": "2025-11-03T15:23:54.135Z",
+      "notes": "",
+      "actionTaken": "took necessary actions",
+      "animalsRescued": 0,
+      "followUpRequired": false
+    },
+    "_id": "6908c8c393289c0760ba54ff",
+    "reportId": "CR-MHJAH52W-JXPM",
+    "status": "Resolved",
+    "priority": "Medium",
+    "assignedTo": null,
+    "timeline": [
+      {
+        "action": "Report Submitted",
+        "description": "Cruelty report submitted by anonymous user",
+        "timestamp": "2025-11-03T15:22:43.065Z",
+        "_id": "6908c8c393289c0760ba5502"
+      },
+      {
+        "action": "Status Changed to Under Investigation",
+        "description": "Status changed to Under Investigation",
+        "performedBy": null,
+        "timestamp": "2025-11-03T15:23:18.903Z",
+        "_id": "6908c8e693289c0760ba553f"
+      },
+      {
+        "action": "Report Resolved",
+        "description": "took necessary actions",
+        "performedBy": null,
+        "timestamp": "2025-11-03T15:23:54.136Z",
+        "_id": "6908c90a93289c0760ba5579"
+      }
+    ],
+    "isActive": true,
+    "isPublic": false,
+    "adminNotes": [],
+    "createdAt": "2025-11-03T15:22:43.100Z",
+    "updatedAt": "2025-11-03T15:23:54.138Z",
+    "__v": 2
+  }
+]

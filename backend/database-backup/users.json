@@ -1,0 +1,100 @@
+[
+  {
+    "location": {
+      "city": "banglore",
+      "state": "karnataka",
+      "country": "India"
+    },
+    "_id": "6905f6b4754020798c56d3bb",
+    "name": "hello_123",
+    "email": "hello@gmail.com",
+    "role": "authority",
+    "phone": "7676701411",
+    "isVerified": false,
+    "profilePicture": "",
+    "rescuesLogged": [],
+    "reportsSubmitted": [],
+    "isActive": true,
+    "createdAt": "2025-11-01T12:01:56.665Z",
+    "updatedAt": "2025-11-01T12:01:56.665Z",
+    "__v": 0
+  },
+  {
+    "location": {
+      "country": "India"
+    },
+    "_id": "69064f1b9039e5d3b32cafc3",
+    "name": "System Admin",
+    "email": "admin@pawtect.com",
+    "role": "authority",
+    "phone": "9876543210",
+    "isVerified": false,
+    "profilePicture": "",
+    "rescuesLogged": [],
+    "reportsSubmitted": [],
+    "isActive": true,
+    "createdAt": "2025-11-01T18:19:07.324Z",
+    "updatedAt": "2025-11-01T18:19:07.324Z",
+    "__v": 0
+  },
+  {
+    "location": {
+      "city": "banglore",
+      "state": "karnataka",
+      "country": "India"
+    },
+    "_id": "690652d2fd61c6305f45f6cc",
+    "name": "shelter",
+    "email": "shelter@gmail.com",
+    "role": "shelter",
+    "phone": "+7978346884",
+    "isVerified": false,
+    "profilePicture": "",
+    "rescuesLogged": [],
+    "reportsSubmitted": [],
+    "isActive": true,
+    "createdAt": "2025-11-01T18:34:58.294Z",
+    "updatedAt": "2025-11-01T18:34:58.294Z",
+    "__v": 0
+  },
+  {
+    "location": {
+      "city": "banglore",
+      "state": "karnataka",
+      "country": "India"
+    },
+    "_id": "69068ce377d19d2fca7bd1ff",
+    "name": "common1",
+    "email": "common1@gmail.com",
+    "role": "citizen",
+    "phone": "7676701411",
+    "isVerified": false,
+    "profilePicture": "",
+    "rescuesLogged": [],
+    "reportsSubmitted": [],
+    "isActive": true,
+    "createdAt": "2025-11-01T22:42:43.287Z",
+    "updatedAt": "2025-11-01T22:42:43.287Z",
+    "__v": 0
+  },
+  {
+    "location": {
+      "city": "banglore",
+      "state": "karnataka",
+      "country": "India"
+    },
+    "_id": "6906b159fd449c4d99371cde",
+    "name": "shelter",
+    "email": "shelter1@gmail.com",
+    "role": "shelter",
+    "phone": "+917676701411",
+    "isVerified": false,
+    "profilePicture": "",
+    "rescuesLogged": [],
+    "reportsSubmitted": [],
+    "isActive": true,
+    "createdAt": "2025-11-02T01:18:17.902Z",
+    "updatedAt": "2025-11-02T01:18:17.902Z",
+    "__v": 0
+  }
+]
