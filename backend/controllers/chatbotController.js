@@ -20,6 +20,18 @@ const processQuery = async (req, res) => {
     let response = '';
     let data = null;
 
+    // Greetings: handle common greetings in a case-insensitive way
+    // Use the lowercased `query` for safe matching and also check multi-word greetings
+    if (/\b(hi|hello|hey|yo|hiya|greetings)\b/.test(query) ||
+        query.includes('good morning') ||
+        query.includes('good afternoon') ||
+        query.includes('good evening')) {
+      return res.json({
+        success: true,
+        response: `👋 Hello! I'm Furries — Pawtect's friendly assistant. You can ask me to look up a dog by PAW ID, show rescue statistics, find nearby shelters, help with donations, or guide you through adoption. How can I help you today?`
+      });
+    }
+
     // PAW ID Lookup (highest priority) - Matches PAW-XXXXXXXX-XXXX format
     const pawIdMatch = message.match(/\b(PAW-[A-Z0-9]+-[A-Z0-9]+)\b/i) || 
                        message.match(/paw[-_\s]?id[:\s]+(PAW-[A-Z0-9]+-[A-Z0-9]+)/i) ||
@@ -100,8 +112,12 @@ const processQuery = async (req, res) => {
  */
 async function handlePawIdQuery(pawId) {
   try {
+    // Populate the shelter reference if present. The schema stores shelter refs
+    // under location.currentLocation.shelterId or currentShelter, so populate
+    // both common paths safely.
     const dog = await Animal.findOne({ paw_id: pawId })
-      .populate('shelter', 'name contactInfo address');
+      .populate({ path: 'location.currentLocation.shelterId', select: 'name contactInfo address' })
+      .populate({ path: 'currentShelter', select: 'name contactInfo address' });
 
     if (!dog) {
       return {
@@ -110,8 +126,10 @@ async function handlePawIdQuery(pawId) {
       };
     }
 
-    const shelterInfo = dog.shelter 
-      ? `\n🏠 Currently at: ${dog.shelter.name}, ${dog.shelter.address?.city || 'Location not specified'}`
+    // Determine shelter info from populated fields if available
+    const shelterDoc = dog.location?.currentLocation?.shelterId || dog.currentShelter || null;
+    const shelterInfo = shelterDoc
+      ? `\n🏠 Currently at: ${shelterDoc.name || 'Unnamed Shelter'}, ${shelterDoc.address?.city || 'Location not specified'}`
       : '';
 
     return {
@@ -122,7 +140,7 @@ async function handlePawIdQuery(pawId) {
                 `Age: ${dog.age || 'Unknown'}\n` +
                 `Gender: ${dog.gender || 'Unknown'}\n` +
                 `Status: ${dog.status}\n` +
-                `Health: ${dog.health_status || 'Not specified'}` +
+                `Health: ${dog.healthStatus?.medicalNotes || (dog.health?.medicalHistory || 'Not specified')}` +
                 shelterInfo +
                 (dog.status === 'Ready for Adoption' 
                   ? '\n\n✨ This dog is available for adoption! Click the "Adopt Me" button on their profile.'
