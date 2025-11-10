@@ -33,11 +33,6 @@ temp/
 *.sqlite
 *.sqlite3
 
-# Uploads (if you store uploads in repo during development)
-uploads/
-backend/uploads/
-frontend/public/uploads/
-
 # Coverage
 coverage/
 
