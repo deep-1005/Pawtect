@@ -64,7 +64,8 @@ Tech stack
 - Frontend: React, Vite, React Router, React Leaflet, Tailwind CSS
 - Dev tooling: nodemon (backend dev), Vite (frontend dev)
 
-Screenshots
+
+A glimpse into our website
 
 <img width="1919" height="1087" alt="Screenshot 2025-11-10 192350" src="https://github.com/user-attachments/assets/86f95a3b-0c8d-4f0d-adf0-44233d38226e" />
 <img width="1919" height="1097" alt="Screenshot 2025-11-10 192423" src="https://github.com/user-attachments/assets/7baa3cc4-e9b2-4f83-b0bb-db0be0e379e2" />
